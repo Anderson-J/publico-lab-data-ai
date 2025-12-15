@@ -1,11 +1,12 @@
 # Security Policy
 
-## Nunca commitar segredos
+## Regras básicas
 
-- Não versionar arquivos .env, chaves, tokens, senhas, certificados ou dumps.
-- Usar GitHub Secrets e variáveis de ambiente.
+- Nunca commitar segredos: tokens, chaves, senhas, arquivos .env, certificados, dumps.
+- Usar variáveis de ambiente e GitHub Secrets para qualquer informação sensível.
 
-## Reportar vulnerabilidades
+## Como reportar um problema de segurança
 
-Se você encontrar uma vulnerabilidade, abra uma issue descrevendo o impacto e como reproduzir.
-Não publique credenciais, tokens ou dados sensíveis.
+- Não abra issue pública contendo detalhes sensíveis ou credenciais.
+- Preferir GitHub Security Advisory, se estiver habilitado no repositório.
+- Se não estiver, descreva o problema de forma genérica e sem dados sensíveis.
