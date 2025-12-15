@@ -76,6 +76,21 @@ services:
     networks:
       - labnet
 
+  tools:
+    build:
+      context: ../..
+      dockerfile: infra/tools/Dockerfile
+    container_name: lab-tools
+    working_dir: /workspace
+    volumes:
+      - ../../:/workspace
+    env_file:
+      - ../../.env
+    networks:
+      - labnet
+    profiles:
+      - tools
+
 volumes:
   pg_data:
   minio_data:

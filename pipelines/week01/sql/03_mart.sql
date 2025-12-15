@@ -1,0 +1,5 @@
+CREATE SCHEMA IF NOT EXISTS mart;
+
+CREATE TABLE IF NOT EXISTS mart.mart_users AS
+SELECT DISTINCT user_id
+FROM stg.stg_events;
